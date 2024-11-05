@@ -10,7 +10,7 @@ const projectsData: Project[] = [
     title: 'WeaUp',
     description: `WeaUp is a mobile app that promotes posture awareness, offering instant feedback on bad posture when using your phone or wearing earbuds. It helps users develop and maintain good posture habits through detailed analytics, collaborative features, badges, goals, and more.`,
     imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    href: '/projects/code-sample',
   },
   {
     title: 'Plowterra',
