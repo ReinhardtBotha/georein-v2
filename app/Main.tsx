@@ -2,7 +2,6 @@ import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { formatDate } from 'pliny/utils/formatDate'
-import NewsletterForm from 'pliny/ui/NewsletterForm'
 import { TypewriterEffect } from '@/components/ui/typewriter-effect'
 import projectsData from '@/data/projectsData'
 import Card from '@/components/Card'
@@ -19,7 +18,7 @@ export default function Home({ posts }) {
     },
     {
       text: 'georein.com',
-      className: 'text-blue-500 dark:text-blue-500',
+      className: 'text-cyan-500 dark:text-cyan-500',
     },
   ]
 
@@ -40,7 +39,7 @@ export default function Home({ posts }) {
 
           <div className="container py-12">
             <div className="-m-4 flex flex-wrap">
-              {projectsData.map((d) => (
+              {projectsData.slice(0, 4).map((d) => (
                 <Card
                   key={d.title}
                   title={d.title}

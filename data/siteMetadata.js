@@ -1,10 +1,10 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Reinhardt Botha - georein.com',
+  title: 'georein.com',
   author: 'Reinhardt Botha',
   headerTitle: 'Reinhardt Botha',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.',
+    'A personal blog and portfolio for all things GIS and Web Development related by Reinhardt Botha',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://georein.com',
