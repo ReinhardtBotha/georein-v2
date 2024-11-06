@@ -40,7 +40,7 @@ export default function PostMinimal({ content, next, prev, children }: LayoutPro
               <PageTitle>{title}</PageTitle>
             </div>
             <div className="relative pt-6">
-              <p className='text-lg leading-7'>{summary}</p>
+              <p className="text-lg leading-7">{summary}</p>
             </div>
           </div>
           <div className="prose max-w-none py-4 dark:prose-invert">{children}</div>
@@ -75,14 +75,14 @@ export default function PostMinimal({ content, next, prev, children }: LayoutPro
               )}
             </div>
             <div className="pt-4 xl:pt-8">
-                <Link
-                  href={`/${basePath}`}
-                  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                  aria-label="Back to Projects"
-                >
-                  &larr; Back to Projects
-                </Link>
-              </div>
+              <Link
+                href={`/${basePath}`}
+                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                aria-label="Back to Projects"
+              >
+                &larr; Back to Projects
+              </Link>
+            </div>
           </footer>
         </div>
       </article>
