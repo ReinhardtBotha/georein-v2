@@ -19,6 +19,7 @@ const siteMetadata = {
   // facebook: 'https://facebook.com',
   youtube: 'https://www.youtube.com/@georein',
   linkedin: 'https://www.linkedin.com/in/wrbotha/',
+  buymeacoffee: 'https://www.buymeacoffee.com/reinhardtbotha',
   // threads: 'https://www.threads.net',
   // instagram: 'https://www.instagram.com',
   // medium: 'https://medium.com',

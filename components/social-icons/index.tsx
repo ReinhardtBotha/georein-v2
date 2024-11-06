@@ -14,6 +14,7 @@ import {
   Tailwind,
   TypeScript,
   Vercel,
+  BuyMeACoffee,
 } from './icons'
 
 const components = {
@@ -32,6 +33,7 @@ const components = {
   tailwind: Tailwind,
   typescript: TypeScript,
   vercel: Vercel,
+  buymeacoffee: BuyMeACoffee,
 }
 
 type SocialIconProps = {
