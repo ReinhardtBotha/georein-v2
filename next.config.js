@@ -13,7 +13,7 @@ const ContentSecurityPolicy = `
   media-src *.s3.amazonaws.com;
   connect-src *;
   font-src 'self';
-  frame-src giscus.app https://www.arcgis.com;
+  frame-src giscus.app https://www.arcgis.com https://www.youtube.com https://storymaps.arcgis.com;
 `
 
 const securityHeaders = [
