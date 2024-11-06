@@ -13,7 +13,7 @@ const ContentSecurityPolicy = `
   media-src *.s3.amazonaws.com;
   connect-src *;
   font-src 'self';
-  frame-src giscus.app https://www.arcgis.com https://www.youtube.com https://storymaps.arcgis.com;
+  frame-src 'self' giscus.app https://www.arcgis.com https://www.youtube.com https://storymaps.arcgis.com;
 `
 
 const securityHeaders = [
@@ -30,7 +30,7 @@ const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
   {
     key: 'X-Frame-Options',
-    value: 'DENY',
+    value: 'SAMEORIGIN',
   },
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
   {
