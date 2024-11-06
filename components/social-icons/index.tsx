@@ -10,6 +10,10 @@ import {
   Threads,
   Instagram,
   Medium,
+  NextJs,
+  Tailwind,
+  TypeScript,
+  Vercel,
 } from './icons'
 
 const components = {
@@ -24,15 +28,20 @@ const components = {
   threads: Threads,
   instagram: Instagram,
   medium: Medium,
+  nextjs: NextJs,
+  tailwind: Tailwind,
+  typescript: TypeScript,
+  vercel: Vercel,
 }
 
 type SocialIconProps = {
   kind: keyof typeof components
   href: string | undefined
   size?: number
+  hover?: boolean
 }
 
-const SocialIcon = ({ kind, href, size = 8 }: SocialIconProps) => {
+const SocialIcon = ({ kind, href, size = 8, hover = true }: SocialIconProps) => {
   if (
     !href ||
     (kind === 'mail' && !/^mailto:[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(href))
@@ -49,9 +58,15 @@ const SocialIcon = ({ kind, href, size = 8 }: SocialIconProps) => {
       href={href}
     >
       <span className="sr-only">{kind}</span>
-      <SocialSvg
-        className={`fill-current text-gray-700 hover:text-primary-500 dark:text-gray-200 dark:hover:text-primary-400 h-${size} w-${size}`}
-      />
+      {hover ? (
+        <SocialSvg
+          className={`fill-current text-gray-700 hover:text-primary-500 dark:text-gray-200 dark:hover:text-primary-400 h-${size} w-${size}`}
+        />
+      ) : (
+        <SocialSvg
+          className={`fill-current text-gray-700  dark:text-gray-200  h-${size} w-${size}`}
+        />
+      )}
     </a>
   )
 }

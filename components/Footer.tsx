@@ -26,9 +26,32 @@ export default function Footer() {
           <Link href="/">{siteMetadata.title}</Link>
         </div>
         <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
-          <Link href="https://github.com/timlrx/tailwind-nextjs-starter-blog">
-            Tailwind Nextjs Theme
-          </Link>
+          <ul className="flex space-x-2">
+            <li>{`Powered by`}</li>
+            <li>{` • `}</li>
+            <li>
+              <SocialIcon kind="nextjs" href={'https://nextjs.org/'} size={5} hover={false} />
+            </li>
+            <li>
+              <SocialIcon
+                kind="typescript"
+                href={'https://www.typescriptlang.org/'}
+                size={5}
+                hover={false}
+              />
+            </li>
+            <li>
+              <SocialIcon
+                kind="tailwind"
+                href={`https://tailwindcss.com/`}
+                size={5}
+                hover={false}
+              />
+            </li>
+            <li>
+              <SocialIcon kind="vercel" href={`https://vercel.com/`} size={5} hover={false} />
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
