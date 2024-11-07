@@ -1,14 +1,12 @@
-import PageTitle from '@/components/PageTitle'
+import ContactForm from '@/components/contactForm'
 import { genPageMetadata } from 'app/seo'
 
 export const metadata = genPageMetadata({ title: 'About' })
 
 export default function Page() {
   return (
-    <>
-      <div className="py-32 text-center">
-        <PageTitle>Coming Soon</PageTitle>
-      </div>
-    </>
+    <div className="flex flex-col items-center justify-center p-24">
+      <ContactForm />
+    </div>
   )
 }
