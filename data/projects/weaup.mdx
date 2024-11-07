@@ -1,38 +1,61 @@
 ---
-title: Sample .md file
+title: WeaUp
 date: '2016-03-08'
-tags: ['markdown', 'code', 'features']
+tags: ['Javascript', 'HTML', 'CSS']
 draft: false
-summary: Example of a markdown file with code blocks and syntax highlighting
+images: ['/static/images/weaup.jpg']
+summary: WeaUp is a mobile app that promotes posture awareness, offering instant feedback on bad posture when using your phone or wearing earbuds. It helps users develop and maintain good posture habits through detailed analytics, collaborative features, badges, goals, and more.
 ---
 
-A sample post with markdown.
+import { Badge } from '@/components/ui/badge'
 
-## Inline Highlighting
+## Project Information
 
-Sample of inline highlighting `sum = parseInt(num1) + parseInt(num2)`
+- Duration: 13 Weeks
+- My role: Full-Stack Developer & Project Manager
+- Team: 4 developers and 4 designers
 
-## Code Blocks
+## Problem
 
-Some Javascript code
+Neck pain is a prevalent health issue caused by the excessive use of electronic devices like smartphones, laptops, and tablets. This prolonged usage often leads to poor neck posture, resulting in discomfort, pain, and long-term musculoskeletal problems, commonly referred to as "text neck".
 
-```javascript
-var num1, num2, sum
-num1 = prompt('Enter first number')
-num2 = prompt('Enter second number')
-sum = parseInt(num1) + parseInt(num2) // "+" means "add"
-alert('Sum = ' + sum) // "+" means combine into a string
-```
+## Solution
 
-Some Python code 🐍
+WeaUp is a mobile app that helps users recognize poor neck posture and its impact on discomfort. By monitoring neck posture throughout the day using motion sensors in mobile devices and connected earbuds, WeaUp provides real-time feedback and reminders. Users can track their progress with detailed analytics to make effective improvements.
 
-```python
-def fib():
-    a, b = 0, 1
-    while True:            # First iteration:
-        yield a            # yield 0 to start with and then
-        a, b = b, a + b    # a will now be 1, and b will also be 1, (0 + 1)
+With gamification features like our mascot, goals, and daily streaks, WeaUp transforms posture correction into an enjoyable journey towards healthier habits.
 
-for index, fibonacci_number in zip(range(10), fib()):
-     print('{i:3}: {f:3}'.format(i=index, f=fibonacci_number))
-```
+## My Role
+
+- Project Management
+- Worked on various Proof of Concepts like Background Tasks, Scoring System and Session controls
+- Developed Session Component
+- Developed tne Level and Experience Systems
+- Developed the Badges components
+- Developed the Profile page and components
+- Developed the project Landing Page
+- Developed and contributed on the Challenges back-end
+- Tested & reviewed other users code on GitHub
+
+## Technologies Used
+
+<Badge variant="outlineLarge">React Native</Badge>
+<Badge variant="outlineLarge">Expo</Badge>
+<Badge variant="outlineLarge">Typescript</Badge>
+<Badge variant="outlineLarge">Node JS</Badge>
+<Badge variant="outlineLarge">Express JS</Badge>
+<Badge variant="outlineLarge">NGINX</Badge>
+<Badge variant="outlineLarge">MongoDB</Badge>
+<Badge variant="outlineLarge">Amazon EC2</Badge>
+
+## Project Link
+
+[WeaUp](https://weaup.io/)
+
+## Project Proposal
+
+<iframe src="/static/documents/WeaUp_ProjectProposal.pdf" width="100%" height="600px" />
+
+## Project Security Report
+
+<iframe src="/static/documents/beetles-security_report.pdf" width="100%" height="600px" />
