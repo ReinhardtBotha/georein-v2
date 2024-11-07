@@ -59,7 +59,7 @@ export default function Home({ posts }) {
               All Projects &rarr;
             </Link>
           </div>
-          <h2 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 pt-16">
+          <h2 className="pt-16 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Latest Posts
           </h2>
           <ul className="divide-y divide-gray-200 dark:divide-gray-700">
