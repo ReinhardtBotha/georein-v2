@@ -84,7 +84,9 @@ export default function ContactForm() {
         </Button>
       </form>
       {state.message && (
-        <p className={`mt-4 text-center ${state.errors || state.isError ? 'text-red-500' : 'text-green-500'}`}>
+        <p
+          className={`mt-4 text-center ${state.errors || state.isError ? 'text-red-500' : 'text-green-500'}`}
+        >
           {state.message}
         </p>
       )}
