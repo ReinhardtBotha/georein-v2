@@ -46,6 +46,7 @@ export default function Home({ posts }) {
                   description={d.description}
                   imgSrc={d.imgSrc}
                   href={d.href}
+                  tech={d.tech}
                 />
               ))}
             </div>
