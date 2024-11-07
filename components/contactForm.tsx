@@ -9,11 +9,11 @@ import { Label } from '@/components/ui/label'
 
 export default function ContactForm() {
   const initialState = { message: null, errors: {}, values: {}, isError: false }
-  const [state, formAction] = useActionState(submitContactForm, initialState)
+  const [state, formAction, isPending] = useActionState(submitContactForm, initialState)
 
   return (
-    <div className="bg-background mx-auto max-w-md rounded-lg p-6 shadow-lg">
-      <h2 className="mb-6 text-center text-2xl font-bold">Contact me</h2>
+    <div className="bg-background mx-auto max-w-lg rounded-lg p-6 shadow-lg">
+      <h2 className="mb-6 text-center text-5xl font-bold">Contact me</h2>
       <p className="mb-6">Have any questions? Want to know more? Feel free to reach out to me!</p>
       <form action={formAction} className="space-y-4">
         <div className="grid grid-cols-2 gap-4">
@@ -79,8 +79,8 @@ export default function ContactForm() {
             </p>
           )}
         </div>
-        <Button type="submit" className="w-full">
-          Send Message
+        <Button type="submit" className="w-full" disabled={isPending}>
+          {isPending ? 'Sending...' : 'Send Message'}
         </Button>
       </form>
       {state.message && (

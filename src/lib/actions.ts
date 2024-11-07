@@ -2,7 +2,7 @@
 
 import { z } from 'zod'
 import { Resend } from 'resend'
-import { EmailTemplate } from '@/components/emailTemplate'
+import { EmailTemplate } from '@/components/EmailTemplate'
 
 const schema = z.object({
   firstName: z.string().min(1, 'First name is required'),
