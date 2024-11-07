@@ -14,7 +14,7 @@ export default function ContactForm() {
   return (
     <div className="bg-background mx-auto max-w-lg rounded-lg p-6 shadow-lg">
       <h2 className="mb-6 text-center text-5xl font-bold">Contact me</h2>
-      <p className="mb-6">Have any questions? Want to know more? Feel free to reach out to me!</p>
+      <p className="mb-6">Have any questions? Want to know more? Feel free to reach out to me.</p>
       <form action={formAction} className="space-y-4">
         <div className="grid grid-cols-2 gap-4">
           <div>
