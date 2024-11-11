@@ -75,12 +75,10 @@ module.exports = () => {
       remotePatterns: [
         {
           protocol: 'https',
-          hostname: 'picsum.photos',
-        },
-        {
-          protocol: 'https',
           hostname: 'utfs.io',
-        },
+          port: '',
+          pathname: '/a/fo9kmmqkx7/**',
+        }
       ],
       unoptimized: false,
     },

@@ -10,7 +10,7 @@ const projectsData: Project[] = [
   {
     title: 'WeaUp',
     description: `WeaUp is a mobile app that promotes posture awareness, offering instant feedback on bad posture when using your phone or wearing earbuds. It helps users develop and maintain good posture habits through detailed analytics, collaborative features, badges, goals, and more.`,
-    imgSrc: 'https://utfs.io/f/MDuYRQOXX1wgRiU9beLxAIW641b2ZyadEfx3QFiekPBr7v8s',
+    imgSrc: 'https://utfs.io/a/fo9kmmqkx7/MDuYRQOXX1wgRiU9beLxAIW641b2ZyadEfx3QFiekPBr7v8s',
     href: '/projects/weaup',
     tech: [
       'React Native',
@@ -26,7 +26,7 @@ const projectsData: Project[] = [
   {
     title: 'Plowterra',
     description: `Plowterra is web application that enables farmers to effortlessly record daily harvests and manage payrolls.`,
-    imgSrc: 'https://utfs.io/f/MDuYRQOXX1wgo5F9fnZPFfynVgrAlds43oqWSHL6TcOz8iGK',
+    imgSrc: 'https://utfs.io/a/fo9kmmqkx7/MDuYRQOXX1wgo5F9fnZPFfynVgrAlds43oqWSHL6TcOz8iGK',
     href: '/projects/plowterra',
     tech: [
       'ReactJS',
@@ -46,7 +46,7 @@ const projectsData: Project[] = [
   {
     title: 'Outsafe BC',
     description: `Outsafe BC is a community-driven GIS web app dedicated to improving outdoor activity safety in British Columbia. It offers users an intuitive platform for reporting and locating various hazards, such as wildlife, environmental issues, and infrastructure concerns.`,
-    imgSrc: 'https://utfs.io/f/MDuYRQOXX1wgJL0X4aYlGmkTve6j9OZWdzFhfLA2nq4E3bVo',
+    imgSrc: 'https://utfs.io/a/fo9kmmqkx7/MDuYRQOXX1wgJL0X4aYlGmkTve6j9OZWdzFhfLA2nq4E3bVo',
     href: '/projects/outsafe-bc',
     tech: [
       'Javascript',
@@ -62,7 +62,7 @@ const projectsData: Project[] = [
   {
     title: 'NZXT Aviation Gauge',
     description: `Aircraft Engine Indicating and Crew Alerting System (EICAS) inspired gauge using the NZXT web integrations API.`,
-    imgSrc: 'https://utfs.io/f/MDuYRQOXX1wgG7CQIPDN0B19SRevJCKcyY2m3lDWzkO8AqV5',
+    imgSrc: 'https://utfs.io/a/fo9kmmqkx7/MDuYRQOXX1wgG7CQIPDN0B19SRevJCKcyY2m3lDWzkO8AqV5',
     href: '/projects/nzxt-aviation',
     tech: [
       'ReactJS',

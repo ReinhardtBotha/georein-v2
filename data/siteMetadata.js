@@ -9,7 +9,7 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
   siteUrl: 'https://georein.com',
   siteRepo: 'https://github.com/ReinhardtBotha/georein-v2',
-  siteLogo: 'https://utfs.io/f/MDuYRQOXX1wgs0TCm3MEDJ18ZHANakCIYWi7dTSqoRMUQh4y',
+  siteLogo: 'https://utfs.io/a/fo9kmmqkx7/MDuYRQOXX1wgs0TCm3MEDJ18ZHANakCIYWi7dTSqoRMUQh4y',
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   // mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'geo.rein@outlook.com',

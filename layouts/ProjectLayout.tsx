@@ -21,7 +21,7 @@ export default function PostMinimal({ content, next, prev, children }: LayoutPro
   const { slug, title, images, path, summary } = content
   const basePath = path.split('/')[0]
   const displayImage =
-    images && images.length > 0 ? images[0] : 'https://picsum.photos/seed/picsum/800/400'
+    images && images.length > 0 ? images[0] : ''
 
   return (
     <SectionContainer>
