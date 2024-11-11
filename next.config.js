@@ -77,8 +77,12 @@ module.exports = () => {
           protocol: 'https',
           hostname: 'picsum.photos',
         },
+        {
+          protocol: 'https',
+          hostname: 'utfs.io',
+        },
       ],
-      unoptimized,
+      unoptimized: false,
     },
     async headers() {
       return [
