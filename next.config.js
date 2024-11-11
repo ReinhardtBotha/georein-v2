@@ -78,7 +78,7 @@ module.exports = () => {
           hostname: 'utfs.io',
           port: '',
           pathname: '/a/fo9kmmqkx7/**',
-        }
+        },
       ],
       unoptimized: false,
     },

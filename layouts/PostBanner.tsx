@@ -19,8 +19,7 @@ interface LayoutProps {
 
 export default function PostMinimal({ content, next, prev, children }: LayoutProps) {
   const { slug, title, images } = content
-  const displayImage =
-    images && images.length > 0 ? images[0] : ''
+  const displayImage = images && images.length > 0 ? images[0] : ''
 
   return (
     <SectionContainer>
