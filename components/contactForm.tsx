@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
+import { Loader2 } from 'lucide-react'
 
 export default function ContactForm() {
   const initialState = { message: null, errors: {}, values: {}, isError: false }
@@ -16,6 +17,13 @@ export default function ContactForm() {
       <h2 className="mb-6 text-center text-5xl font-bold">Contact me</h2>
       <p className="mb-6">Have any questions? Want to know more? Feel free to reach out to me.</p>
       <form action={formAction} className="space-y-4">
+        <input
+          type="text"
+          name="url"
+          tabIndex={-1}
+          autoComplete="off"
+          style={{ position: 'absolute', left: '-999999999px' }}
+        />
         <div className="grid grid-cols-2 gap-4">
           <div>
             <Label htmlFor="firstName">First Name</Label>
@@ -80,7 +88,14 @@ export default function ContactForm() {
           )}
         </div>
         <Button type="submit" className="w-full" disabled={isPending}>
-          {isPending ? 'Sending...' : 'Send Message'}
+          {isPending ? (
+            <>
+              <Loader2 className="animate-spin"></Loader2>
+              Sending...
+            </>
+          ) : (
+            'Send Message'
+          )}
         </Button>
       </form>
       {state.message && (

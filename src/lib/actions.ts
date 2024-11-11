@@ -14,6 +14,14 @@ const schema = z.object({
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function submitContactForm(prevState: any, formData: FormData) {
+  if (formData.get('url')) {
+    return {
+      message: 'Spam detected.',
+      values: {},
+      isError: true,
+    }
+  }
+
   const validatedFields = schema.safeParse({
     firstName: formData.get('firstName'),
     lastName: formData.get('lastName'),
