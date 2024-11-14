@@ -58,3 +58,7 @@ input:-webkit-autofill:focus {
   display: inline-block;
   vertical-align: middle;
 }
+
+.grecaptcha-badge {
+  visibility: hidden;
+}

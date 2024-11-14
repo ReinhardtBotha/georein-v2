@@ -1,22 +1,40 @@
 'use client'
 
-import { useActionState } from 'react'
+import { FormEvent, useActionState, startTransition, useRef } from 'react'
 import { submitContactForm } from '@/lib/actions'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { Loader2 } from 'lucide-react'
+import { getCaptchaToken } from '@/lib/captcha'
 
 export default function ContactForm() {
-  const initialState = { message: null, errors: {}, values: {}, isError: false }
+  const initialState = { message: null, errors: {}, values: {}, isError: false, isSuccess: false }
   const [state, formAction, isPending] = useActionState(submitContactForm, initialState)
+  const formRef = useRef<HTMLFormElement>(null)
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault()
+    const form = e.target as HTMLFormElement
+    const token = await getCaptchaToken()
+
+    const formData = new FormData(form)
+
+    startTransition(() => {
+      formAction({ token, formData })
+    })
+  }
+
+  if (formRef.current && state.isSuccess) {
+    formRef.current.reset()
+  }
 
   return (
     <div className="bg-background mx-auto max-w-lg rounded-lg p-6 shadow-lg">
       <h2 className="mb-6 text-center text-5xl font-bold">Contact me</h2>
       <p className="mb-6">Have any questions? Want to know more? Feel free to reach out to me.</p>
-      <form action={formAction} className="space-y-4">
+      <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
         <input
           type="text"
           name="url"
@@ -87,6 +105,11 @@ export default function ContactForm() {
             </p>
           )}
         </div>
+      <p>
+        This site is protected by reCAPTCHA and the Google
+        <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+        <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+      </p>
         <Button type="submit" className="w-full" disabled={isPending}>
           {isPending ? (
             <>
