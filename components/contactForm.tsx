@@ -105,10 +105,16 @@ export default function ContactForm() {
             </p>
           )}
         </div>
-        <p>
-          This site is protected by reCAPTCHA and the Google
-          <a href="https://policies.google.com/privacy">Privacy Policy</a> and
-          <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+        <p className="text-sm">
+          This site is protected by reCAPTCHA and the Google{' '}
+          <a className="underline" href="https://policies.google.com/privacy">
+            Privacy Policy
+          </a>{' '}
+          and{' '}
+          <a className="underline" href="https://policies.google.com/terms">
+            Terms of Service
+          </a>{' '}
+          apply.
         </p>
         <Button type="submit" className="w-full" disabled={isPending}>
           {isPending ? (
