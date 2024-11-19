@@ -15,6 +15,7 @@ import {
   TypeScript,
   Vercel,
   BuyMeACoffee,
+  Location,
 } from './icons'
 
 const components = {
@@ -34,11 +35,12 @@ const components = {
   typescript: TypeScript,
   vercel: Vercel,
   buymeacoffee: BuyMeACoffee,
+  location: Location,
 }
 
 type SocialIconProps = {
   kind: keyof typeof components
-  href: string | undefined
+  href?: string | undefined
   size?: number
   hover?: boolean
 }
@@ -51,6 +53,13 @@ const SocialIcon = ({ kind, href, size = 8, hover = true }: SocialIconProps) => 
     return null
 
   const SocialSvg = components[kind]
+
+  if (href === 'nothing')
+    return (
+      <SocialSvg
+        className={`fill-current text-gray-700  dark:text-gray-200  h-${size} w-${size}`}
+      />
+    )
 
   return (
     <a
